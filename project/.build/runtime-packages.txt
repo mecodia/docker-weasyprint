@@ -1,0 +1,6 @@
+cairo
+pango
+gdk-pixbuf
+py3-cffi
+py3-pillow
+py-lxml
