@@ -9,6 +9,7 @@ A sample docker-compose configuration is as follows:
             build: .
             ports:
               - '5001:5001'
+        command: ["uwsgi", "--http-socket", "0.0.0.0:5001", "--module", "wsgi:application", "--show-config"]
 
 To use, `POST` some HTML to `localhost:5001/pdf`.  The response will be a rendered pdf file.
 
